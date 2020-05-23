@@ -4,10 +4,10 @@ namespace OOP_lab_5_7_3
 {
     class Output
     {
+        public const string Format = "{0, -20} {1, -25} {2, -10} {3, -10} {4, -25}";
+
         public static void Write()
         {
-            const string Format = "{0, -20} {1, -25} {2, -10} {3, -10} {4, -25}";
-
             Console.WriteLine(Format, "Прiзище", "Фах", "День", "Змiна", "Кiлькiсть вiдвiдувачiв");
 
             for (int i = 0; i < Program.doctors.Length; ++i)

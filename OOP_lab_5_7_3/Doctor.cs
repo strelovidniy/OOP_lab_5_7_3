@@ -1,4 +1,6 @@
-﻿namespace OOP_lab_5_7_3
+﻿using System;
+
+namespace OOP_lab_5_7_3
 {
     public class Doctor
     {
@@ -17,7 +19,7 @@
             set => _profession = value;
         }
 
-        public virtual string UkrainianI(string str) 
+        public virtual string UkrainianI(string str)
         {
             char[] ch = str.ToCharArray();
 
@@ -42,6 +44,18 @@
         {
             Surename = UkrainianI(surename);
             Profession = UkrainianI(profession);
+        }
+
+        public virtual string Length(int n)
+        {
+            try
+            {
+                return "Довжина прiзвища лiкаря: " + Program.doctors[n - 1].Surename.Length.ToString() + " символи.";
+            }
+            catch (SystemException)
+            {
+                return "Такого запису не iснує!";
+            }
         }
     }
 }

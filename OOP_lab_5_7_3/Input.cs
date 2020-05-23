@@ -29,13 +29,16 @@ namespace OOP_lab_5_7_3
 
         private static void ReadKey()
         {
-            
+
         Start:
 
             Console.WriteLine("Додавання записiв: +");
             Console.WriteLine("Редагування записiв: E");
             Console.WriteLine("Знищення записiв: -");
             Console.WriteLine("Виведення записiв: Enter");
+            Console.WriteLine("Загальна кiлькiсть вiдвiдувачiв: A");
+            Console.WriteLine("Прийом з мiнiмальною кiлькiстю вiдвiдувачiв: M");
+            Console.WriteLine("Довжина прiзвища: L");
             Console.WriteLine("Вихiд: Esc");
 
             ConsoleKey key = Console.ReadKey().Key;
@@ -48,6 +51,18 @@ namespace OOP_lab_5_7_3
 
                 case ConsoleKey.E:
                     Work.Edit();
+                    goto Start;
+
+                case ConsoleKey.A:
+                    Work.Sum();
+                    goto Start;
+
+                case ConsoleKey.M:
+                    Work.Minimum();
+                    goto Start;
+
+                case ConsoleKey.L:
+                    Work.Length();
                     goto Start;
 
                 case ConsoleKey.OemMinus:

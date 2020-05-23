@@ -1,6 +1,6 @@
 ﻿namespace OOP_lab_5_7_3
 {
-    public class Reception : Doctor
+    class Reception : Doctor
     {
         private string _day;
         private string _shift;
@@ -34,8 +34,8 @@
         }
         public Reception(string surename, string profession, string day, string shift, int visitorsCount)
         {
-            Surename = UkrainianI(surename);
-            Profession = UkrainianI(profession);
+            base.Surename = UkrainianI(surename);
+            base.Profession = UkrainianI(profession);
             Day = UkrainianI(day);
             Shift = UkrainianI(shift);
             VisitorsCount = visitorsCount;
