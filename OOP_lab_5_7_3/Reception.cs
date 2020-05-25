@@ -1,6 +1,6 @@
 ﻿namespace OOP_lab_5_7_3
 {
-    class Reception : Doctor
+    public class Reception : Doctor
     {
         private string _day;
         private string _shift;

@@ -1,4 +1,4 @@
-﻿namespace OOP_lab_5_7_1
+﻿namespace OOP_lab_5_7_3
 {
     class Program
     {
